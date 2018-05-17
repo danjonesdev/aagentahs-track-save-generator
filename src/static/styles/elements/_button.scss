@@ -1,0 +1,13 @@
+.btn {
+  cursor: pointer;
+  background: palette(light-grey);
+  color: palette(dark-grey);
+  outline: 0;
+  border: 0;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    color: palette(light-grey);
+    background: palette(grey);
+  }
+}

@@ -1,0 +1,34 @@
+{% extends './_layouts/master.html' %}
+
+{% block content %}
+
+<div class="pa4  roboto">
+  <div class="tac  pv2">
+    <a class="link  ph3" href="https://soundcloud.com/aagentah"><img class="dib  w2" src="{{settings.img}}/social/iconmonstr-soundcloud-1-240.png" alt=""></a>
+    <a class="link  ph3" href="https://open.spotify.com/artist/5sAlVt0dBip3YMS6di8JJw?si=hxjnYDV-SviM2Ltc11tl6Q"><img class="dib  w2" src="{{settings.img}}/social/iconmonstr-spotify-1-240.png" alt=""></a>
+    <a class="link  ph3" href="https://en-gb.facebook.com/aagentah/"><img class="dib  w2" src="{{settings.img}}/social/iconmonstr-facebook-1-240.png" alt=""></a>
+    <a class="link  ph3" href="https://twitter.com/aagentah?lang=en"><img class="dib  w2" src="{{settings.img}}/social/iconmonstr-twitter-1-240.png" alt=""></a>
+  </div>
+
+  <h1 class="f3  tac  fw7  pt3">Aagentah's Track Save Generator</h1>
+
+  <p class="f5  tac  mw4  center  pt2">
+    How do you approach saving new tracks? How will you ever remember the track without creating a ridiculously long and over exaggerated name?
+    How do you describe your track for future references even though the project will surely be abandoned and forgotten about?
+    <br><br>
+    Look no further. The new "Track Save Generator" has all of your track saving needs (as the title implies).
+  </p>
+
+  <form class="db  center  tac  w5  pb2" data-from action="javascript:void(0);">
+    <input class="db  center  tac  mv4  pa2  f4  input" data-input type="text" placeholder="Enter track name" name="" value="">
+    <p class="f5  tac  center">Intensity meter:</p>
+    <input class="db  center  tac  mt4  mb4  slider" data-slider type="range" min="1" max="20" value="5">
+    <button class="db  center  tac  mb4  pv3  ph4  f4  shadow2  btn" type="submit">Generate</button>
+  </form>
+
+  <div class="center  ba  bw1  black  mw5  pa3  mb4">
+    <p class="f5  black  tac  center  mb0" data-track-gen>YOUR SAVE NAME WILL APPEAR HERE</p>
+  </div>
+</div>
+
+{% endblock %}

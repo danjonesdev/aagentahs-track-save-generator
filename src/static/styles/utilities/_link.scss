@@ -1,0 +1,9 @@
+.link {
+  text-decoration: none;
+  transition: all 0.2s ease-in;
+}
+
+.link:focus, .link:active {
+  outline: 0;
+  border: 0;
+}
